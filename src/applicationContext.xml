@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="user" class="cn.czg.spring1.User">
+         <!-- 通过get set 方式注入-->
+        <!--<property name="age" value="12"></property>-->
+        <!--<property name="name" value="zzhangsan"></property>-->
+        <!--<property name="phone" value="152253242313423"></property>-->
+
+
+        <!-- 通过构造器 方式注入-->
+
+        <constructor-arg  name="name"  value ="zzhangsan" ></constructor-arg>
+        <constructor-arg  name="age"  value ="12" ></constructor-arg>
+        <constructor-arg  name="phone"  value ="152253242313423" ></constructor-arg>
+
+
+    </bean>
+</beans>
